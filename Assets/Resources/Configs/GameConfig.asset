@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d3767249df49e4a9386c575c3d9dfa, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: UnityEngine.CoreModule:UnityEngine:ScriptableObject
+  Planets:
+  - Id: 1
+    RotationPeriod: 5
+    RotationVelocity: 1
+    EllipseTrajectory: {x: 250, y: 150}
+    PlanetSprite: {fileID: 21300000, guid: dee6d7cccadbacf4d9338873e51d416f, type: 3}
+    Health: 248
+  - Id: 2
+    RotationPeriod: 5
+    RotationVelocity: 1.9
+    EllipseTrajectory: {x: 300, y: 120}
+    PlanetSprite: {fileID: 21300000, guid: cf8ae9d6ef2e3104ea00786c50f694d4, type: 3}
+    Health: 213
+  - Id: 3
+    RotationPeriod: 7
+    RotationVelocity: 1
+    EllipseTrajectory: {x: 200, y: 160}
+    PlanetSprite: {fileID: 21300000, guid: 28235432b20497449a1d304e40f4dae4, type: 3}
+    Health: 402
+  - Id: 4
+    RotationPeriod: 8
+    RotationVelocity: 1
+    EllipseTrajectory: {x: 150, y: 160}
+    PlanetSprite: {fileID: 21300000, guid: 508a67024155c894b9024a9eb8e54e59, type: 3}
+    Health: 343
+  - Id: 5
+    RotationPeriod: 7
+    RotationVelocity: 1
+    EllipseTrajectory: {x: 280, y: 100}
+    PlanetSprite: {fileID: 21300000, guid: dee6d7cccadbacf4d9338873e51d416f, type: 3}
+    Health: 439
+  Rockets:
+  - Id: 1
+    Acceleration: 20
+    Damage: 83
+    Weight: 3
+    Cooldown: 4
+    Sprite: {fileID: 21300000, guid: af48a8f11898bab40afd81c75f4e86db, type: 3}
+  - Id: 2
+    Acceleration: 20
+    Damage: 109
+    Weight: 5
+    Cooldown: 6
+    Sprite: {fileID: 21300000, guid: ecc9b4c66c54d5841b79a1ce6ea07bd8, type: 3}
+  - Id: 3
+    Acceleration: 20
+    Damage: 42
+    Weight: 1
+    Cooldown: 2
+    Sprite: {fileID: 21300000, guid: af48a8f11898bab40afd81c75f4e86db, type: 3}
+  Enemies:
+  - PlanetId: 1
+    RocketId: 2
+  - PlanetId: 2
+    RocketId: 1
+  - PlanetId: 3
+    RocketId: 3
+  - PlanetId: 4
+    RocketId: 1
+  - PlanetId: 5
+    RocketId: 3
+  MinEnemiesAmount: 1
+  MaxEnemiesAmount: 5
