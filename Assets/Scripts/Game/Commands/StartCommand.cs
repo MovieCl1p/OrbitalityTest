@@ -4,6 +4,7 @@ using Core.Actions;
 using Core.Binder;
 using Core.ViewManager;
 using Game.Actions;
+using Game.Service;
 using Game.Service.Input;
 using UnityEngine;
 
@@ -42,8 +43,13 @@ namespace DefaultNamespace.Commands
 
         private void InitializeServices()
         {
+            
+                
             var resourceCache = BindManager.GetInstance<IResourceCache>();
             resourceCache.Init();
+            
+            var effectService = BindManager.GetInstance<IEffectService>();
+            effectService.Init();
             
             ViewManager.Instance.Init();
         }

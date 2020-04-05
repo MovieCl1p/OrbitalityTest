@@ -90,7 +90,7 @@ namespace Game.Unit.View
             
             _currentTime += DataContext.RotationVelocity * Time.deltaTime;
             float dT = Mathf.Lerp(0, 1, _currentTime / DataContext.RotationPeriod);
-            transform.localPosition = EvaluateEllipse(dT, DataContext.EllipseCenter.x, DataContext.EllipseCenter.y);
+            transform.localPosition = UnitExtension.EvaluateEllipse(dT, DataContext.EllipseCenter.x, DataContext.EllipseCenter.y);
 
             if (_currentTime >= DataContext.RotationPeriod)
             {
@@ -98,13 +98,7 @@ namespace Game.Unit.View
             }
         }
         
-        private Vector2 EvaluateEllipse(float t, float xAxis, float yAxis)
-        {
-            float angle = Mathf.Deg2Rad * 360 * t;
-            float x = Mathf.Sin(angle) * xAxis;
-            float y = Mathf.Cos(angle) * yAxis;
-            return new Vector2(x, y);
-        }
+        
 
         protected override void OnReleaseResources()
         {

@@ -56,7 +56,12 @@ namespace Game.Unit.View
 
         public void Update()
         {
-            //transform.rotation = Quaternion.LookRotation(_rigidbody.velocity);
+            if (_rigidbody.velocity != Vector2.zero)
+            {
+                Vector2 v = _rigidbody.velocity;
+                float angle = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + 90;
+                _image.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
         }
 
         public void OnTriggerEnter2D(Collider2D other)

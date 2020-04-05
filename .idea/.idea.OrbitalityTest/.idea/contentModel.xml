@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\anton\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\anton\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_OrbitalityTest.668240852.00" t="ExcludeRecursive" />
+    <e p="D:\Projects\WorkTests\Test\OrbitalityTest" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Content" t="Include">
+          <e p="Balck.shader" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Core" t="Include">
+            <e p="Actions" t="Include">
+              <e p="ActionQueue.cs" t="Include" />
+              <e p="Actions" t="Include">
+                <e p="BaseAction.cs" t="Include" />
+                <e p="DownloadAction.cs" t="Include" />
+                <e p="IAction.cs" t="Include" />
+                <e p="InvokeMethodAction.cs" t="Include" />
+              </e>
+            </e>
+            <e p="BaseMonoBehaviour.cs" t="Include" />
+            <e p="Binder" t="Include">
+              <e p="BindItem.cs" t="Include" />
+              <e p="BindManager.cs" t="Include" />
+              <e p="InjectAttribute.cs" t="Include" />
+            </e>
+            <e p="Config" t="Include">
+              <e p="UIConfig.cs" t="Include" />
+              <e p="ViewConfig.cs" t="Include" />
+            </e>
+            <e p="CoroutineManager.cs" t="Include" />
+            <e p="Dispatcher" t="Include">
+              <e p="BindingId.cs" t="Include" />
+              <e p="Dispatcher.cs" t="Include" />
+              <e p="IDispatcher.cs" t="Include" />
+              <e p="ISignal.cs" t="Include" />
+              <e p="SignalDeclaration.cs" t="Include" />
+              <e p="SignalSubscription.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="EditorHelper.cs" t="Include" />
+              <e p="UIConfigEditor.cs" t="Include" />
+            </e>
+            <e p="IResourceCache.cs" t="Include" />
+            <e p="MonoScheduledBehaviour.cs" t="Include" />
+            <e p="ResourceCache.cs" t="Include" />
+            <e p="SingletonBaseMonoBehaviour.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="BaseComponent.cs" t="Include" />
+              <e p="BaseView.cs" t="Include" />
+              <e p="BindableField.cs" t="Include" />
+              <e p="IDataContext.cs" t="Include" />
+            </e>
+            <e p="UpdateNotifier.cs" t="Include" />
+            <e p="ViewManager" t="Include">
+              <e p="Data" t="Include">
+                <e p="LayerType.cs" t="Include" />
+              </e>
+              <e p="View.cs" t="Include" />
+              <e p="ViewLayer.cs" t="Include" />
+              <e p="ViewManager.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Game" t="Include">
+            <e p="Actions" t="Include">
+              <e p="BindServicesAction.cs" t="Include" />
+              <e p="BindSignalsAction.cs" t="Include" />
+              <e p="RegisterViewsAction.cs" t="Include" />
+            </e>
+            <e p="AppRoot.cs" t="Include" />
+            <e p="Commands" t="Include">
+              <e p="StartCommand.cs" t="Include" />
+            </e>
+            <e p="Config" t="Include">
+              <e p="GameConfig.cs" t="Include" />
+              <e p="PrefabAsset.cs" t="Include" />
+              <e p="PrefabReferencesConfig.cs" t="Include" />
+            </e>
+            <e p="Effect" t="Include">
+              <e p="BlackHoleEffect.cs" t="Include" />
+            </e>
+            <e p="Factories" t="Include">
+              <e p="IFactory.cs" t="Include" />
+              <e p="Unit" t="Include">
+                <e p="IUnitFactory.cs" t="Include" />
+                <e p="UnitFactory.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Service" t="Include">
+              <e p="EffectService.cs" t="Include" />
+              <e p="IEffectService.cs" t="Include" />
+              <e p="Input" t="Include">
+                <e p="IInputProvider.cs" t="Include" />
+                <e p="IInputService.cs" t="Include" />
+                <e p="InputService.cs" t="Include" />
+              </e>
+              <e p="NPC" t="Include">
+                <e p="EnemyDataProviderService.cs" t="Include" />
+                <e p="IEnemyDataProviderService.cs" t="Include" />
+              </e>
+              <e p="User" t="Include">
+                <e p="Data" t="Include">
+                  <e p="ParsedUserData.cs" t="Include" />
+                  <e p="UserData.cs" t="Include" />
+                </e>
+                <e p="IUserService.cs" t="Include" />
+                <e p="UserService.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Signals" t="Include">
+              <e p="OpenMainMenuSignal.cs" t="Include" />
+              <e p="StartGameSignal.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="Base" t="Include">
+                <e p="BaseMediator.cs" t="Include" />
+              </e>
+              <e p="Game" t="Include">
+                <e p="Mediator" t="Include">
+                  <e p="GameMediator.cs" t="Include" />
+                </e>
+                <e p="View" t="Include">
+                  <e p="BlackHoleComponent.cs" t="Include" />
+                  <e p="BorderComponent.cs" t="Include" />
+                  <e p="FinishScreen.cs" t="Include" />
+                  <e p="GameScreen.cs" t="Include" />
+                  <e p="InputProviderComponent.cs" t="Include" />
+                </e>
+              </e>
+              <e p="MainMenu" t="Include">
+                <e p="Data" t="Include">
+                  <e p="PlanetItemData.cs" t="Include" />
+                </e>
+                <e p="Mediator" t="Include">
+                  <e p="MainMenuMediator.cs" t="Include" />
+                </e>
+                <e p="View" t="Include">
+                  <e p="MainMenuScreen.cs" t="Include" />
+                  <e p="PlanetItemView.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ViewNames.cs" t="Include" />
+            </e>
+            <e p="Unit" t="Include">
+              <e p="Data" t="Include">
+                <e p="IUnitDataMapper.cs" t="Include" />
+                <e p="RocketDataContext.cs" t="Include" />
+                <e p="UnitDataContext.cs" t="Include" />
+                <e p="UnitDataMapper.cs" t="Include" />
+                <e p="WeaponDataContext.cs" t="Include" />
+              </e>
+              <e p="Mediator" t="Include">
+                <e p="IDamageApplicable.cs" t="Include" />
+                <e p="IDamageDealer.cs" t="Include" />
+                <e p="IGravityApplicable.cs" t="Include" />
+                <e p="UnitMediator.cs" t="Include" />
+              </e>
+              <e p="Strategy" t="Include">
+                <e p="BaseStrategy.cs" t="Include" />
+                <e p="EnemyStrategy.cs" t="Include" />
+                <e p="IStrategy.cs" t="Include" />
+                <e p="PlayerStrategy.cs" t="Include" />
+              </e>
+              <e p="UnitExtension.cs" t="Include" />
+              <e p="View" t="Include">
+                <e p="GravityEffector.cs" t="Include" />
+                <e p="IUnitView.cs" t="Include" />
+                <e p="RocketView.cs" t="Include" />
+                <e p="UnitHitBox.cs" t="Include" />
+                <e p="UnitView.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="OrbitalityTest.sln" t="IncludeFlat" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

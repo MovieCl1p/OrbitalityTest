@@ -30,6 +30,9 @@ namespace Game.UI.Game.Mediator
         [Inject] 
         public IDispatcher Dispatcher { get; set; }
         
+        [Inject] 
+        public IEffectService EffectService { get; set; }
+        
         private List<UnitMediator> _units = new List<UnitMediator>();
 
         private int _timeK = -1;
@@ -43,6 +46,8 @@ namespace Game.UI.Game.Mediator
             
             UpdateData();
             CreateEnemies();
+            
+            EffectService.ShowEffect(true);
         }
 
         private void OnMainMenuClick()
@@ -113,20 +118,27 @@ namespace Game.UI.Game.Mediator
         {
             if (_units.Count <= 1)
             {
-                Time.timeScale = 0;
-                View.ShowFinishScreen();
+                ShowEndScreen();
                 return;
             }
 
             if (!_units.Any(x => x.DataContext.IsPlayer))
             {
-                Time.timeScale = 0;
-                View.ShowFinishScreen();
+                ShowEndScreen();
             }
+        }
+
+        private void ShowEndScreen()
+        {
+            EffectService.ShowEffect(false);
+            Time.timeScale = 0;
+            View.ShowFinishScreen();
         }
 
         protected override void OnExit()
         {
+            EffectService.ShowEffect(false);
+            
             for (int i = 0; i < _units.Count; i++)
             {
                 _units[i].Exit();

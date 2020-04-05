@@ -22,6 +22,7 @@ namespace Game.Actions
             BindManager.Bind<IUnitDataMapper>().To<UnitDataMapper>().ToSingleton();
             BindManager.Bind<IUserService>().To<UserService>().ToSingleton();
             BindManager.Bind<IEnemyDataProviderService>().To<EnemyDataProviderService>().ToSingleton();
+            BindManager.Bind<IEffectService>().To<EffectService>().ToSingleton();
 
             BindFactory();
             Complete();
