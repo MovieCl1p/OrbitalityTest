@@ -31,9 +31,6 @@ namespace Game.Unit.View
         [SerializeField] 
         private GravityEffector _gravityEffector;
         
-        [Inject]
-        public IInputService InputService { get; set; }
-
         private bool _isUpdating;
         private float _currentTime;
         private float _angle;
@@ -98,10 +95,9 @@ namespace Game.Unit.View
             }
         }
         
-        
-
         protected override void OnReleaseResources()
         {
+            DataContext.CurrentHealth.UnBind(OnHealthChange);
             base.OnReleaseResources();
         }
 

@@ -58,8 +58,17 @@ namespace Game.UI.Game.Mediator
 
         private void OnRestartClick()
         {
+            for (int i = 0; i < _units.Count; i++)
+            {
+                _units[i].Exit();
+            }
+            _units.Clear();
+            
             Time.timeScale = 1;
-            Dispatcher.Fire(new OpenMainMenuSignal());
+            EffectService.ShowEffect(true);
+            
+            UpdateData();
+            CreateEnemies();
         }
 
         private void OnPauseClick()

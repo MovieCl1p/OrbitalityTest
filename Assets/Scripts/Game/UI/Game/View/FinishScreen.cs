@@ -30,12 +30,12 @@ namespace Game.UI.Game.View
 
         private void MainMenuClick()
         {
-            OnRestartClick?.Invoke();
+            OnMainMenuClick?.Invoke();
         }
 
         private void RestartClick()
         {
-            OnMainMenuClick?.Invoke();
+            OnRestartClick?.Invoke();
         }
 
         public void Hide()
