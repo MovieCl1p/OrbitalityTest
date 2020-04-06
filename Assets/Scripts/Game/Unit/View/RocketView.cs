@@ -35,6 +35,7 @@ namespace Game.Unit.View
             _rigidbody.mass = context.Weapon.Weight;
             transform.position = context.Position;
             transform.rotation = Quaternion.Euler(0, 0, context.Rotation - 90);
+            _rigidbody.AddForce(transform.up * (DataContext.Weapon.Acceleration * 0.7f), ForceMode2D.Impulse);
         }
 
         public event Action OnRelease;
