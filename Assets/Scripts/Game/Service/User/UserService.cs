@@ -45,6 +45,7 @@ namespace Game.Service
             if (!File.Exists(path))
             {
                 _userData = new UserData(Default());
+                return;
             }
             
             string json = File.ReadAllText(path);
